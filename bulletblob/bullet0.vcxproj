@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DynamicDebug|Win32">
+      <Configuration>DynamicDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BEA3871F-B27A-4D70-8F9A-694E0F3265A0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>bullet0</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='DynamicDebug|Win32'">
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\bullet\src;C:\devil\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\bullet\lib;C:\devil\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>C:\bullet\lib;C:\devil\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\devil\include;$(IncludePath)</IncludePath>
+    <TargetName>bullet03d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\bullet\src;C:\bullet\Glut;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalOptions>/NODEFAULTLIB:library %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>BulletDynamics_vs2010_debug.lib;BulletCollision_vs2010_debug.lib;LinearMath_vs2010_debug.lib;opengl32.lib;glfw3.lib;glew32.lib;OIS_static_d.lib;DevIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\bullet\src;C:\GnuWin32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>BulletDynamics_vs2010.lib;BulletCollision_vs2010.lib;LinearMath_vs2010.lib;opengl32.lib;glfw3.lib;glew32.lib;OIS_static.lib;DevIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BlobGrid.cpp" />
+    <ClCompile Include="Evolution.cpp" />
+    <ClCompile Include="Individual.cpp" />
+    <ClCompile Include="IsoSurface.cpp" />
+    <ClCompile Include="main_3d.cpp" />
+    <ClCompile Include="main_sim.cpp" />
+    <ClCompile Include="Meshes.cpp" />
+    <ClCompile Include="OglBuff.cpp" />
+    <ClCompile Include="OglBuff_core.cpp" />
+    <ClCompile Include="OglCam.cpp" />
+    <ClCompile Include="OglFrameBuffer.cpp" />
+    <ClCompile Include="OglLight.cpp" />
+    <ClCompile Include="OglMesh.cpp" />
+    <ClCompile Include="OglOIS.cpp" />
+    <ClCompile Include="OglRenderer.cpp" />
+    <ClCompile Include="OglRendererRender.cpp" />
+    <ClCompile Include="OglShader.cpp" />
+    <ClCompile Include="OglTexture.cpp" />
+    <ClCompile Include="BlobEvo.cpp" />
+    <ClCompile Include="BlobInd.cpp" />
+    <ClCompile Include="PerlinNoise.cpp" />
+    <ClCompile Include="ppm.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Simulation.cpp" />
+    <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BlobGrid.h" />
+    <ClInclude Include="Basics.h" />
+    <ClInclude Include="Evolution.h" />
+    <ClInclude Include="frameinfo.h" />
+    <ClInclude Include="Individual.h" />
+    <ClInclude Include="IsoSurface.h" />
+    <ClInclude Include="Meshes.h" />
+    <ClInclude Include="OglBuff.h" />
+    <ClInclude Include="OglBuff_core.h" />
+    <ClInclude Include="OglCam.h" />
+    <ClInclude Include="OglFrameBuffer.h" />
+    <ClInclude Include="OglLight.h" />
+    <ClInclude Include="OglMesh.h" />
+    <ClInclude Include="OglOIS.h" />
+    <ClInclude Include="OglRenderer.h" />
+    <ClInclude Include="OglShader.h" />
+    <ClInclude Include="OglTex.h" />
+    <ClInclude Include="BlobEvo.h" />
+    <ClInclude Include="BlobInd.h" />
+    <ClInclude Include="PerlinNoise.h" />
+    <ClInclude Include="ppm.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Simulation.h" />
+    <ClInclude Include="Switch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\AmbDirAAQ.fsh" />
+    <None Include="shaders\AmbDirQ.fsh" />
+    <None Include="shaders\AmbDirShadowQ.fsh" />
+    <None Include="shaders\AmbQ.fsh" />
+    <None Include="shaders\AO.fsh" />
+    <None Include="shaders\Blur.fsh" />
+    <None Include="shaders\EVSMGauss.fsh" />
+    <None Include="shaders\EVSMGaussV.fsh" />
+    <None Include="shaders\GBuff.fsh" />
+    <None Include="shaders\GBuff.vsh" />
+    <None Include="shaders\GBuffAA.fsh" />
+    <None Include="shaders\GBuffAA.vsh" />
+    <None Include="shaders\GBuffFloor.fsh" />
+    <None Include="shaders\Quad.fsh" />
+    <None Include="shaders\Quad.vsh" />
+    <None Include="shaders\QuadAA.fsh" />
+    <None Include="shaders\QuadFlicker.fsh" />
+    <None Include="shaders\QuadFXAA.fsh" />
+    <None Include="shaders\QuadInv.vsh" />
+    <None Include="shaders\ShadowMap.fsh" />
+    <None Include="shaders\ShadowMap.vsh" />
+    <None Include="shaders\ShadowRangeV.fsh" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

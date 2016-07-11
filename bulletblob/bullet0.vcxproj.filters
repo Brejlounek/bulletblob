@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Ogl">
+      <UniqueIdentifier>{54c23996-6a6d-4695-9b61-00f999dc7951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Ogl">
+      <UniqueIdentifier>{dbb05678-03a6-43c6-a15f-925120f349cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{82a23598-a3a2-49f4-8a78-1b6e1416763c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Vertex">
+      <UniqueIdentifier>{08baa2e5-77d3-46d1-9af6-b29e6f351475}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Evolution">
+      <UniqueIdentifier>{6fd1f06e-9a13-4174-8906-7f80a3a8f08f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Evolution">
+      <UniqueIdentifier>{cad6ff28-ce2e-452b-bfc2-708732edb149}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BlobGrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IsoSurface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OglFrameBuffer.cpp">
+      <Filter>Source Files\Ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="OglRenderer.cpp">
+      <Filter>Source Files\Ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="OglRendererRender.cpp">
+      <Filter>Source Files\Ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="OglShader.cpp">
+      <Filter>Source Files\Ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="OglCam.cpp">
+      <Filter>Source Files\Ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="OglTexture.cpp">
+      <Filter>Source Files\Ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="Meshes.cpp">
+      <Filter>Source Files\Ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="OglLight.cpp">
+      <Filter>Source Files\Ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="OglMesh.cpp">
+      <Filter>Source Files\Ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="OglBuff.cpp">
+      <Filter>Source Files\Ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="OglBuff_core.cpp">
+      <Filter>Source Files\Ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="OglOIS.cpp">
+      <Filter>Source Files\Ogl</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PerlinNoise.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ppm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main_3d.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main_sim.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Evolution.cpp">
+      <Filter>Source Files\Evolution</Filter>
+    </ClCompile>
+    <ClCompile Include="BlobEvo.cpp">
+      <Filter>Source Files\Evolution</Filter>
+    </ClCompile>
+    <ClCompile Include="BlobInd.cpp">
+      <Filter>Source Files\Evolution</Filter>
+    </ClCompile>
+    <ClCompile Include="Individual.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Simulation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IsoSurface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BlobGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Basics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frameinfo.h">
+      <Filter>Header Files\Ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="Meshes.h">
+      <Filter>Header Files\Ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="OglBuff.h">
+      <Filter>Header Files\Ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="OglBuff_core.h">
+      <Filter>Header Files\Ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="OglCam.h">
+      <Filter>Header Files\Ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="OglFrameBuffer.h">
+      <Filter>Header Files\Ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="OglLight.h">
+      <Filter>Header Files\Ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="OglMesh.h">
+      <Filter>Header Files\Ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="OglOIS.h">
+      <Filter>Header Files\Ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="OglRenderer.h">
+      <Filter>Header Files\Ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="OglShader.h">
+      <Filter>Header Files\Ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="OglTex.h">
+      <Filter>Header Files\Ogl</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PerlinNoise.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ppm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Evolution.h">
+      <Filter>Header Files\Evolution</Filter>
+    </ClInclude>
+    <ClInclude Include="BlobEvo.h">
+      <Filter>Header Files\Evolution</Filter>
+    </ClInclude>
+    <ClInclude Include="BlobInd.h">
+      <Filter>Header Files\Evolution</Filter>
+    </ClInclude>
+    <ClInclude Include="Individual.h">
+      <Filter>Header Files\Evolution</Filter>
+    </ClInclude>
+    <ClInclude Include="Switch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\ShadowRangeV.fsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\ShadowMap.fsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\QuadFXAA.fsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\QuadFlicker.fsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\QuadAA.fsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\Quad.fsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\GBuffAA.fsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\GBuff.fsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\EVSMGaussV.fsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\EVSMGauss.fsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\Blur.fsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\AO.fsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\AmbQ.fsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\AmbDirShadowQ.fsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\AmbDirQ.fsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\AmbDirAAQ.fsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shaders\GBuff.vsh">
+      <Filter>Shaders\Vertex</Filter>
+    </None>
+    <None Include="shaders\GBuffAA.vsh">
+      <Filter>Shaders\Vertex</Filter>
+    </None>
+    <None Include="shaders\Quad.vsh">
+      <Filter>Shaders\Vertex</Filter>
+    </None>
+    <None Include="shaders\QuadInv.vsh">
+      <Filter>Shaders\Vertex</Filter>
+    </None>
+    <None Include="shaders\ShadowMap.vsh">
+      <Filter>Shaders\Vertex</Filter>
+    </None>
+    <None Include="shaders\GBuffFloor.fsh">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
